@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: savt-backend
+
+  data:
+    mongodb:
+      uri: mongodb://${MONGO_USER}:${MONGO_PASSWORD}@localhost:27017/savt_db?authSource=admin
+      auto-index-creation: true
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
