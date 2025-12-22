@@ -2068,12 +2068,100 @@
       "aiTool": "AI Assistant",
       "detectionMethod": "REALTIME_SPEED_ANALYSIS",
       "lineCount": 1
+    },
+    {
+      "filePath": "C:/Users/safiy/Downloads/savt-backend/backend/src/test/java/com/savt/backend/SavtBackendApplicationTests.java",
+      "timestamp": 1766400854259,
+      "startOffset": 181,
+      "endOffset": 233,
+      "codeContent": "@MockBean\n    private EmbeddingModel embeddingModel;",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 2
+    },
+    {
+      "filePath": "C:/Users/safiy/Downloads/savt-backend/backend/src/test/java/com/savt/backend/SavtBackendApplicationTests.java",
+      "timestamp": 1766400857458,
+      "startOffset": 62,
+      "endOffset": 117,
+      "codeContent": "import org.springframework.ai.embedding.EmbeddingModel;",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "/SavtBackendApplicationTests.java",
+      "timestamp": 1766400860735,
+      "startOffset": 246,
+      "endOffset": 266,
+      "codeContent": "IntellijIdeaRulezzz ",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "C:/Users/safiy/Downloads/savt-backend/backend/src/test/java/com/savt/backend/SavtBackendApplicationTests.java",
+      "timestamp": 1766400862848,
+      "startOffset": 178,
+      "endOffset": 237,
+      "codeContent": "import org.springframework.boot.test.mock.mockito.MockBean;",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "C:/Users/safiy/Downloads/savt-backend/backend/src/test/java/com/savt/backend/SavtBackendApplicationTests.java",
+      "timestamp": 1766400906669,
+      "startOffset": 258,
+      "endOffset": 291,
+      "codeContent": "org.springframework.ai.embedding.",
+      "aiProbability": 70,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "C:/Users/safiy/Downloads/savt-backend/backend/src/test/java/com/savt/backend/SavtBackendApplicationTests.java",
+      "timestamp": 1766400921167,
+      "startOffset": 141,
+      "endOffset": 180,
+      "codeContent": "org.springframework.boot.autoconfigure.",
+      "aiProbability": 70,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "C:/Users/safiy/Downloads/savt-backend/backend/src/test/java/com/savt/backend/SavtBackendApplicationTests.java",
+      "timestamp": 1766400921189,
+      "startOffset": 62,
+      "endOffset": 132,
+      "codeContent": "import org.springframework.boot.autoconfigure.EnableAutoConfiguration;",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "C:/Users/safiy/Downloads/savt-backend/backend/src/test/java/com/savt/backend/SavtBackendApplicationTests.java",
+      "timestamp": 1766400925676,
+      "startOffset": 62,
+      "endOffset": 167,
+      "codeContent": "import org.springframework.ai.vectorstore.mongodb.autoconfigure.MongoDBAtlasVectorStoreAutoConfiguration;",
+      "aiProbability": 95,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
     }
   ],
   "toolStats": {
     "AI Assistant": {
-      "usageCount": 188,
-      "totalLines": 2748
+      "usageCount": 196,
+      "totalLines": 2757
     }
   }
 }
