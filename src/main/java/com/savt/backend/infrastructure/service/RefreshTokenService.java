@@ -1,6 +1,5 @@
-package com.jartiste.stockvisionai.infrastructure.service;
+package com.savt.backend.infrastructure.service;
 
-import com.jartiste.stockvisionai.infrastructure.service.JwtService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
