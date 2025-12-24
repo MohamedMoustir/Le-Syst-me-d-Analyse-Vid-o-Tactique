@@ -1,4 +1,4 @@
-package com.savt.backend.config;
+package com.savt.backend.infrastructure.config;
 
 import com.savt.backend.shared.exception.ForbiddenException;
 import com.savt.backend.shared.exception.UnauthorizedException;
