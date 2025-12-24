@@ -1,19 +1,21 @@
 package com.savt.backend.presentation.dto.Request;
 
+import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class VideoUploadRequest {
-    private String titre;
-    private String uploaderId;
+public class UserUpdateDTO {
+
+    private String nom;
+
+    private String prenom;
+
+    @Email
+    private String email;
 }
-
-

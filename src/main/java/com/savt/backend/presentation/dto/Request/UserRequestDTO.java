@@ -1,5 +1,7 @@
 package com.savt.backend.presentation.dto.Request;
 
+
+import com.savt.backend.domain.enums.Role;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -11,16 +13,17 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RegisterRequest {
-    @NotBlank(message = "Le nom est obligatoire")
+public class UserRequestDTO {
+
+    @NotBlank
     private String nom;
 
-    @Email(message = "Email invalide")
+    @Email
     @NotBlank
     private String email;
 
     @NotBlank
     private String password;
 
-    private String role;
+    private Role role;
 }

@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection="users")
 @Data
 @Builder
-public class Utilisateur {
+public class User {
     @Id
     private String id;
 
@@ -17,4 +17,6 @@ public class Utilisateur {
     private String email;
     private String password;
     private Role role;
+    private boolean isActivated;
+
 }
