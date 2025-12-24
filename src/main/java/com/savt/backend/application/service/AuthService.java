@@ -2,10 +2,12 @@ package com.savt.backend.application.service;
 
 import com.savt.backend.domain.entity.User;
 import com.savt.backend.domain.enums.Role;
+import com.savt.backend.domain.exception.DuplicateResourceException;
 import com.savt.backend.domain.repository.UserRepository;
 import com.savt.backend.infrastructure.service.AutheticatedUser;
 import com.savt.backend.infrastructure.service.JwtService;
 import com.savt.backend.infrastructure.service.RefreshTokenService;
+import com.savt.backend.presentation.dto.Response.LoginResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -27,7 +29,7 @@ public class AuthService {
     private final RedisTemplate<String ,Object> redisTemplate ;
 
 
-    public LoginResponse register(String email ,String password){
+    public LoginResponse register(String email , String password,String role){
         if(userRepository.findByEmail(email).isPresent()){
             throw new DuplicateResourceException("User already exist with Email :" + email);
         }
@@ -35,12 +37,12 @@ public class AuthService {
                 .email(email)
                 .password(passwordEncoder.encode(password))
                 .isActivated(true)
-                .role(Role.COACH)
+                .role(Role.valueOf(role))
                 .build();
         userRepository.save(user);
 
-        String role = user.getRole().toString();
-        String accessToken = this.jwtService.generateToken(email, role);
+        String roles = user.getRole().toString();
+        String accessToken = this.jwtService.generateToken(email, roles);
         String refreshToken = this.jwtService.generateRefreshToken(email);
 
         refreshTokenService.storeRefreshtoken(refreshToken);
@@ -50,7 +52,7 @@ public class AuthService {
                 .refreshToken(refreshToken)
                 .tokenType(BEARER_TOKEN_TYPE)
                 .email(user.getEmail())
-                .role(role)
+                .role(roles)
                 .build();
     }
 
