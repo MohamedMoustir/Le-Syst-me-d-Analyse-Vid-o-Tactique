@@ -1,16 +1,19 @@
 spring:
   application:
     name: savt-backend
-
   data:
+    redis:
+      host: localhost
+      port: 6379
     mongodb:
-      uri: mongodb://${MONGO_USER}:${MONGO_PASSWORD}@localhost:27017/savt_db?authSource=admin
+      uri: mongodb://localhost:27017/savt_db
       auto-index-creation: true
 
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
+jwt:
+  secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+
+  access-token:
+    expiration: 900000
+
+  refresh-token:
+    expiration: 604800000

@@ -1,4 +1,3 @@
 spring:
-  data:
-    mongodb:
-      uri: mongodb://${MONGO_USER}:${MONGO_PASSWORD}@savt_db:27017/savt_db?authSource=admin
+  profiles:
+    active: qa
