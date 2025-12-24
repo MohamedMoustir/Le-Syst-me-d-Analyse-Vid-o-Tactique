@@ -1,4 +1,4 @@
-package com.savt.backend.application.dto;
+package com.savt.backend.presentation.dto;
 
 public class FrameDataDTO {
 }
