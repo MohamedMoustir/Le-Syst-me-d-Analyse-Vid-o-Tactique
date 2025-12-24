@@ -1,0 +1,4 @@
+package com.savt.backend.domain.entity;
+
+public class Joueur {
+}
