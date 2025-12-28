@@ -9977,12 +9977,78 @@
       "aiTool": "AI Assistant",
       "detectionMethod": "REALTIME_SPEED_ANALYSIS",
       "lineCount": 2
+    },
+    {
+      "filePath": "/SavtBackendApplication.java",
+      "timestamp": 1766937266858,
+      "startOffset": 173,
+      "endOffset": 193,
+      "codeContent": "IntellijIdeaRulezzz ",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "C:/Users/safiy/Downloads/savt-backend/backend/src/main/java/com/savt/backend/SavtBackendApplication.java",
+      "timestamp": 1766937270824,
+      "startOffset": 172,
+      "endOffset": 192,
+      "codeContent": "lombok.extern.slf4j.",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "C:/Users/safiy/Downloads/savt-backend/backend/src/main/java/com/savt/backend/SavtBackendApplication.java",
+      "timestamp": 1766937270837,
+      "startOffset": 27,
+      "endOffset": 60,
+      "codeContent": "import lombok.extern.slf4j.Slf4j;",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "/SavtBackendApplication.java",
+      "timestamp": 1766937276029,
+      "startOffset": 27,
+      "endOffset": 61,
+      "codeContent": "import lombok.extern.slf4j.Slf4j;\n",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 2
+    },
+    {
+      "filePath": "C:/Users/safiy/Downloads/savt-backend/backend/src/main/java/com/savt/backend/SavtBackendApplication.java",
+      "timestamp": 1766937280327,
+      "startOffset": 27,
+      "endOffset": 68,
+      "codeContent": "import io.netty.handler.logging.LogLevel;",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "C:/Users/safiy/Downloads/savt-backend/backend/src/main/java/com/savt/backend/SavtBackendApplication.java",
+      "timestamp": 1766937293247,
+      "startOffset": 27,
+      "endOffset": 68,
+      "codeContent": "import io.netty.handler.logging.LogLevel;",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
     }
   ],
   "toolStats": {
     "AI Assistant": {
-      "usageCount": 907,
-      "totalLines": 2412
+      "usageCount": 913,
+      "totalLines": 2419
     }
   }
 }
